@@ -15,8 +15,9 @@ import java.util.List;
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Deck {
+    List<Card> decks;
 
-    Integer id;
-
-    List<Card> cards;
+    public void add(Card card) {
+        decks.add(card);
+    }
 }

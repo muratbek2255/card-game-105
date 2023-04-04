@@ -1,33 +1,28 @@
 package com.example.game105.entity;
 
 
+import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
-import java.util.HashMap;
-import java.util.Map;
 
-
+@Entity
 @Getter
 @Setter
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
+@Table(name = "games")
 public class Game {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
 
-    Deck deck;
-
+    @Enumerated(EnumType.STRING)
     State state;
 
-    Map<String, Player> players;
-
-    public Game(Deck deck) {
-        this.deck = deck;
-        this.state = State.OPEN;
-        this.players = new HashMap<>();
-    }
+    String players;
 }

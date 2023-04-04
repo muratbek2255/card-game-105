@@ -1,7 +1,6 @@
 package com.example.game105.entity;
 
 
-import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -22,5 +21,4 @@ public class Card {
     CardSuit cardSuit;
 
     CardProperties cardProperties;
-
 }

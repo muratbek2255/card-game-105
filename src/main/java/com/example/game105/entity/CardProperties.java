@@ -1,20 +1,10 @@
 package com.example.game105.entity;
 
 
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import lombok.experimental.FieldDefaults;
-
-
-@Getter
-@Setter
-@RequiredArgsConstructor
-@FieldDefaults(level = AccessLevel.PRIVATE)
-public class CardProperties {
-
-    Integer id;
-
-    String property;
+public enum CardProperties {
+    PLUS40,
+    PLUS20,
+    YOUGET2CARDS,
+    ADDONECARD,
+    SKIP
 }
