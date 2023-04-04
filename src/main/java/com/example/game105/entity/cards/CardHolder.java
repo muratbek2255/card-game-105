@@ -1,6 +1,7 @@
-package com.example.game105.entity;
+package com.example.game105.entity.cards;
 
 
+import com.example.game105.entity.Hand;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -14,10 +15,11 @@ import java.util.List;
 @Setter
 @RequiredArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Deck {
-    List<Card> decks;
+public class CardHolder {
 
-    public void add(Card card) {
-        decks.add(card);
-    }
+    List<CardDeck> decks;
+
+    List<Hand> hands;
+
+
 }

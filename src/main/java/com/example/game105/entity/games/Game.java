@@ -1,6 +1,7 @@
-package com.example.game105.entity;
+package com.example.game105.entity.games;
 
 
+import com.example.game105.entity.State;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;

@@ -1,6 +1,7 @@
 package com.example.game105.entity;
 
 
+import com.example.game105.entity.cards.Card;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

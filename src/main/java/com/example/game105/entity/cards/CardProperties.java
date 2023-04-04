@@ -1,4 +1,4 @@
-package com.example.game105.entity;
+package com.example.game105.entity.cards;
 
 
 public enum CardProperties {

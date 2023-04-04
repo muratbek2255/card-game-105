@@ -1,4 +1,4 @@
-package com.example.game105.entity;
+package com.example.game105.entity.cards;
 
 import java.util.Collections;
 import java.util.HashMap;
